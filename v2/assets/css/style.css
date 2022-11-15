@@ -1,0 +1,337 @@
+body {
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+}
+[hidden] {
+    display: none !important;
+}
+.active {
+    display: block !important;
+}
+.first-section{
+    display: block;
+}
+.first-section-header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+}
+.first-section-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    box-shadow: inset 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 25px 25px 0px 0px;
+}
+.navbar{
+    width: 8%;
+    padding-top: 18px;
+    margin-left: 9%;
+}
+.logo{
+    padding: 2% 0%;
+}
+.logo img{
+    width: 70%;
+    margin: 0px 20%;
+}
+.first-section-center{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.first-section-center.active{
+    display: block;    
+    position: fixed;
+    top: 72px;
+    bottom: 81px;
+    overflow: auto;
+}
+.first-section-center-row{
+    /* width: 100%; */
+    padding: 1% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.first-section-center-row svg{
+    width: 100%;
+    height: 80px;
+    padding: 10% 0% 0% 0%;
+}
+.first-section-center-row svg:hover{
+    fill: white;
+}
+.first-section-center-column{
+    padding: 1% 0%;
+    /* width: 100%; */
+    display: flex;
+}
+.large-button{
+    width: 100%;
+    margin: 1%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0px -2px 0px 2px #0000001c;
+    border: solid 0px;
+}
+.large-button h2{
+    font-size: 18px;
+    /*width: 60%;*/
+    height: 27px;
+    margin: 10% 0% 0% 0%;
+}
+.large-button p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    width: 100%;
+    height: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: #C30000;
+}
+hr{
+    margin: 0px 23%;
+}
+.large-button:hover{
+    background-color: #C30000;
+    color: white;
+}
+.large-button:hover p{
+    color: white;
+}
+.column-button{
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0px -2px 0px 2px #0000001c;
+    border: solid 0px;
+    margin: 0% 6% 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.column-button-list:last-child{
+    text-align:  end;
+}
+.column-button h2{
+    font-size: 18px;
+    margin: 8px 0px 8px 5px;
+}
+.column-button svg{
+    width: 14px;
+    height: 38px;
+}
+.first-section-center-column{
+    flex-direction: column;
+    width: 90%;
+}
+.first-section-center-column:hover{
+    fill: white;
+    width: 90%;
+}
+.column-button:hover{
+    background-color: #C30000;
+    color: white;
+}
+.chartContainer{
+    padding-bottom: 20px;
+}
+.chart-large-button{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 7% 0% 5%;
+    margin-left: 5%;
+}
+.chart-large-button button{
+    width: 25%;
+    height: 27px;
+    border-radius: 10px;
+    border: solid red 1px;
+    background-color: white;
+    color: #C30000;
+}
+.chart-large-button button:hover{
+    color: white;
+    background-color: #C30000;
+}
+.chart-small-button{
+    width: 90%;
+    display: flex;
+    margin-left: 8%;
+    padding: 5% 0% 7%;
+}
+.chart-small-button button{
+    width: 20%;
+    height: 24px;
+    border-radius: 10px;
+    border: solid white 1px;
+    background-color: white;
+    color: #C30000;
+    font-size: 10px;
+}
+.chart-small-button button.focused{
+    color: white;
+    background-color: #C30000;
+}
+.note{
+    width: 90%;
+    margin-left: 8%;
+    text-align: start;
+}
+.note p{
+    font-size: 10px;
+    margin: 0px 0px 0px;
+}
+.note h1{
+    font-family: monospace;
+    font-size: 16px;
+    margin: 2% 0% 0%;
+}
+.button-footer{
+    width: 80%;
+    display: flex;
+    padding: 5% 10%;
+    justify-content: space-between;
+}
+.button-footer button{
+    width: 45%;
+    height: 40px;
+    border: solid 0px;
+    color: #C30000;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.button-footer button.active{
+    color: white;
+    background-color: #C30000;
+}
+.section{
+    display: none;
+}
+.section-header{
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px #0000001c;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+}
+.section-header svg{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+.section-header p{
+    font-size: 23px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 0;
+}
+.section-body-header{
+    width: 100%;
+}
+.section-body-header-over{
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    margin: 5% 5% 5% 5%;
+    padding: 3% 0% 3% 0%;
+}
+.section-body-header-over button{
+    border-radius: 10px;
+    border: solid 0px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px #0000001c;
+    padding: 3% 13% 3% 13%;
+    margin-right: 5%;
+    color: #C30000;
+    font-weight: 900;
+}
+.section-body-header-under{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 2px 2px 2px 2px #0000001c;
+    border-radius: 15px;
+    margin-top: 23px;
+}
+.section-body-header-under-list{
+    width: 33%;
+    justify-content: space-between;
+    text-align: center;
+    color: #C30000;
+}
+.section-body-header-under-list p{
+    margin: 6px 0px 6px 0px;
+}
+.section-body-header-under-list P:last-child{
+    color: black;
+    padding-bottom: 5%;
+}
+.section-body-body{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #0000001c ;
+    width: 90%;
+    margin: 5% 5%;
+    padding-bottom: 15%;
+}
+.section-body-body-over{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+.section-body-body-over h3{
+    margin:  0px 0px 0px 0px;
+}
+.section-body-body-over-in{
+    margin: 3% 0%;
+    padding: 3% 0%;
+}
+.section-body-body-under{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.section-body-body-under-list-over{
+    flex-direction: row;
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: solid 1px #0000004a;
+    color: #9e9e9e;
+    justify-content: space-between;
+}
+.section-body-body-under-list-over p{
+    width: 34%;
+}
+.section-body-body-under-list-over p:last-child{
+    text-align: end;
+}
+.section-body-body-under-list{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: solid 1px #0000004a;
+    justify-content: space-between;
+}
+.section-body-body-under-list p{
+    width: 34%;
+}
+.section-body-body-under-list p:last-child{
+    text-align: end;
+}
